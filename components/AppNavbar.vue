@@ -29,7 +29,7 @@ const appConfig = useAppConfig()
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <div class="pt-2 w-20 h-20">
-          <img src="logo.svg" alt="">
+          <img src="@/assets/logo.svg" alt="">
         </div>
         <!-- Menu Items -->
         <div class="hidden space-x-6 md:flex">
