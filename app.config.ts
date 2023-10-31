@@ -1,4 +1,5 @@
 export default defineAppConfig({
+  cover: "img/blob.jpg",
   socials: {
     twitter: '',
     github: '',
@@ -7,7 +8,9 @@ export default defineAppConfig({
   nuxtIcon: {
     aliases: {
       'dark-mode': 'ph:moon-bold',
-      'light-mode': 'ph:sun-bold'
+      'light-mode': 'ph:sun-bold',
+      'sepia-mode': 'ph:coffee-bold',
+      'system-mode': 'fe:desktop'
     }
   }
 })

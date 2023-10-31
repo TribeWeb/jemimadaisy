@@ -1,19 +1,35 @@
 <script setup lang="ts">
 const colorMode = useColorMode()
-const onClick = () => (colorMode.value === 'light' ? (colorMode.preference = 'dark') : (colorMode.preference = 'light'))
+const onClick = () => {
+  const values = ['system', 'light', 'dark', 'sepia']
+  const index = values.indexOf(colorMode.preference)
+  const next = (index + 1) % values.length
+
+  colorMode.preference = values[next]
+}
 </script>
 
 <template>
-  <button aria-label="Color Mode" class="inline-block w-5" @click="onClick">
+  <button
+    aria-label="Color Mode"
+    @click="onClick"
+  >
     <ColorScheme placeholder="...">
-      <template v-if="colorMode.value === 'dark'">
-        <Icon name="dark-mode" class="w-5 h-5" />
-        <span class="sr-only">Dark Mode</span>
-      </template>
-      <template v-else>
-        <Icon name="light-mode" class="w-5 h-5" />
-        <span class="sr-only">Light Mode</span>
-      </template>
+      <Icon :name="`${colorMode.preference}-mode`" />
     </ColorScheme>
   </button>
 </template>
+<style>
+/* body {
+  background-color: #8B8D5A;
+  color: rgba(0,0,0,0.8);
+}
+.dark-mode body {
+  background-color: #091a28;
+  color: #ebf4f1;
+}
+.sepia-mode body {
+  background-color: #f1e7d0;
+  color: #433422;
+} */
+</style>

@@ -8,7 +8,8 @@ export default defineNuxtConfig({
   ],
   // https://color-mode.nuxtjs.org
   colorMode: {
-    classSuffix: ''
+    classSuffix: '',
+    fallback: 'light'
   },
   // https://content.nuxtjs.org
   content: {
