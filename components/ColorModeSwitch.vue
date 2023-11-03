@@ -20,7 +20,7 @@ const onClick = () => {
   </button>
 </template>
 <style>
-html {
+/* html {
   background-color: #8B8D5A;
   color: rgba(0,0,0,0.8);
 }
@@ -31,5 +31,5 @@ html {
 .sepia html {
   background-color: #f1e7d0;
   color: #433422;
-}
+} */
 </style>
