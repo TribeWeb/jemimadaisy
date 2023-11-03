@@ -20,16 +20,16 @@ const onClick = () => {
   </button>
 </template>
 <style>
-/* body {
+html {
   background-color: #8B8D5A;
   color: rgba(0,0,0,0.8);
 }
-.dark-mode body {
+.dark html {
   background-color: #091a28;
   color: #ebf4f1;
 }
-.sepia-mode body {
+.sepia html {
   background-color: #f1e7d0;
   color: #433422;
-} */
+}
 </style>
