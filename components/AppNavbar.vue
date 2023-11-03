@@ -30,7 +30,7 @@ const { navigation } = useContent()
 </script>
 
 <template>
-  <nav class="backdrop-blur-[6px] bg-white/80 dark:backdrop-blur-[6px] dark:bg-black/60 flex items-center justify-between flex-wrap fixed w-full px-8 z-20 top-0 left-0 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-600">
+  <nav class="backdrop-blur-[6px] bg-white/80 dark:backdrop-blur-[6px] dark:bg-gray-900/60 flex items-center justify-between flex-wrap fixed w-full px-8 z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
     <div class="flex items-center flex-no-shrink text-white mr-6">
       <img class="w-20 h-20" src="@/assets/logo.svg" alt="">
       <span class="font-semibold text-xl tracking-tight text-gray-700 dark:text-gray-100 hover:text-gray-700">Jemima Daisy</span>
