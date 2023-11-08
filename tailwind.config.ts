@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#8B8D5A',
+        primary: colors.emerald
       }
     }
   }
