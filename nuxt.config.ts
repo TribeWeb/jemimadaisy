@@ -1,12 +1,18 @@
 export default defineNuxtConfig({
+  extends: '@nuxt/ui-pro',
   devtools: { enabled: true },
   modules: [
     '@nuxt/content',
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode',
-    'nuxt-icon',
-    '@nuxthq/studio'
+    // '@nuxtjs/tailwindcss',
+    // '@nuxtjs/color-mode',
+    // 'nuxt-icon',
+    '@nuxt/ui',
+    '@nuxthq/studio',
+    
   ],
+  ui: {
+    icons: ['simple-icons', 'ph'],
+  },
   // https://color-mode.nuxtjs.org
   colorMode: {
     classSuffix: '',
